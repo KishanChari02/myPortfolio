@@ -1,0 +1,77 @@
+/* ==== Global Reset ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5d8aa8; /* Airforce Blue */
+  color: white;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.logo span {
+  color: #c7e0f4;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #c7e0f4;
+}
+
+/* ==== Mobile Menu ==== */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .nav-links ul {
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 200px;
+    background: #5d8aa8;
+    display: none;
+    padding: 20px 0;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+  }
+
+  .nav-links.open ul {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

@@ -1,0 +1,38 @@
+.about {
+  background: #ffffff;
+  padding: 4rem 2rem;
+  color: #1e293b;
+  border-bottom: 1px solid #e5e7eb; 
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #2563eb;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #2563eb;
+  padding-left: 0.75rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.about-details {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.about-details h3 {
+  font-size: 1.1rem;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
