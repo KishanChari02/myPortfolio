@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
 
       <div className="hero-image">
         <img
-          src="src/assets/Kishan1.jpeg"
+          src="/Kishan1.jpeg"
           alt="Kishan Chari"
         />
       </div>
